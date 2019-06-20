@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url(./images/greyfloral.png);
+    min-height: 500px;
+}
+
+
+.outside {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    border: solid 1px #777777;
+    background-color: white;
+}
+.header {
+    width: 960px;
+    height: 78px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    position: relative;
+    margin-bottom: solid 1px #777777;
+}
+
+.name {
+   float: left;
+   background-color: #4aaaa5;
+   height: 78px;
+   padding: 20px;
+}
+
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: white;
+}
+
+.links {
+    float: right;
+    margin-top: 25px;
+    color: #777777;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 20;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+a:hover {
+    color: lightpink;
+}
+
+h3 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;   
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.content {
+    clear: both;
+    width: 960px;
+    height: 100%;
+    margin: 40px auto;
+    margin-bottom: 110px;
+    border: solid 1px #777777;
+    padding: 30px;
+    line-height: 26px;
+    background: white;
+}
+
+#flamingo {
+    float: right;
+    height: 170px;
+    width: auto;
+    margin-left: 10px;
+}
+
+#barcaftn {
+    height: 150px;
+    float: left;
+    padding-right: 10px;
+}
+
+.photoandpara {
+    height: 100%;
+    padding-top: 10px;
+}
+
+footer {
+    height: 80px;
+    width: 100%;
+    font-size: small;
+    text-align: center;
+    background-color: gray;
+    border-top: solid 6px #4aaaa5;
+    position: fixed;
+    bottom: 0;
+    padding: 25px;
+    color: white;
+    margin-top: 20px;
+}
+
+.formheads {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#name {
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+    height: 100px;
+}
+
+textarea {
+    color: #777777;
+    border: 1px solid lightgray;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+
+#pic1, #pic2, #pic3, #pic4, #pic5 {
+    width: 350px;
+    height: auto;
+    margin-left: -15px;
+    position: relative;
+}
+
+#first2 {
+    display: flex;
+}
+
+#next2 {
+    display: flex;
+}
+
+#last {
+    display: flex;
+}
+
+.images h3 {
+    text-align: center;
+    background-color: #4aaaa5;
+    color: white;
+    width: 350px;
+    position: absolute;
+    padding: 10px;
+    margin-top: -80px;
+    opacity: .9;
+    margin-left: -15px;
+}
+
+.images h3:hover {
+    background-color: white;
+    color: #4aaaa5;
+}
+
+.contentp {
+    clear: both;
+    width: 960px;
+    height: 100%;
+    margin: 40px auto;
+    margin-bottom: 120px;
+    border: solid 1px #777777;
+    padding: 30px;
+    line-height: 26px;
+    background: white;
+}
+
+@media only screen and (max-width: 980px) {
+    .header {
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+    .content {
+        width: 50%;
+        float: left;
+        margin-left: 5%;
+    }
+    .contentp {
+        width: 50%;
+        float: left;
+        margin-left: 5%;
+    }
+    #pic1, #pic2, #pic3, #pic4, #pic5 {
+        width: 200px;
+    }
+    .images h3 {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+    .content {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .contentp {
+        width: 90%;
+        margin-left: 5%;
+    }
+    #pic1, #pic2, #pic3, #pic4, #pic5 {
+        width: 305px;
+    }
+    .images h3 {
+        width: 305px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .name {
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+    .links {
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+        background-color: white;
+        padding: 3%;
+    }
+    .content {
+        width: 90%;
+        margin-left: 5%;
+    }
+    #pic1, #pic2, #pic3, #pic4, #pic5 {
+        width: 100%;
+        display: block;
+        
+    }
+    #first2 {
+        display: block;
+    }
+    .images h3 {
+        width: 100%;
+        position: relative;
+    }
+}
